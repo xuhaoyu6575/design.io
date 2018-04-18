@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,ol,dl {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+.clearfix:after{
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden
+}
+html{
+    font: 12px MicrosoftYaHei;
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    　　color: #999;
+}
+input:-moz-placeholder, textarea:-moz-placeholder {
+    　　color: #999;
+}
+input::-moz-placeholder, textarea::-moz-placeholder {
+    　　color:#999;
+}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+    　　color: #999;
+}
+.person{
+    width: 100%;
+    height: auto;
+}
+.personLeft{
+    position: fixed;
+    left: 0;
+    z-index: 100;
+    width: 160px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: 1px 0 0 0 #eeeeee;
+}
+.personLeft>i{
+   position: relative; 
+   top: 16px;
+   left: 24px;
+   width: 40px;
+   height: 42px;
+   display: inline-block;
+   background: #eeeeee;
+}
+.personLeft ul{
+    position: absolute;
+    top: calc(100% - 480px);
+    left: 24px;
+    width: 60px;
+    text-align: center;
+}
+.personLeft ul>li{
+    margin-top: 30px;
+}
+.personLeft ul>li>a{
+    font-size: 18px;
+    font-family: Arial;
+    color: #000;
+    line-height: 40px;
+    height: 40px;
+    display: block;
+
+}
+.personLeft ul li.nav_list{
+    background: url(../images/line.png)no-repeat 16px 32px;
+    background-size: 32px 5px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+
+}
+.personContent{  
+    height: 100%;
+    touch-action: none;
+    transform: translate3d(0px, 0px, 0px);
+    transition: all 700ms ease;
+    left: 160px;
+    width: calc(100% - 160px);
+     padding:0 0 0 100px;
+}
+.personContent .section{
+    padding:44px 0 0 100px;
+}
+.personContent .section>.design{
+    width: 965px;
+    height: 100%;
+    margin:50px 0;
+}
+.personContent .section>.design img{
+    display: block;
+    margin: 0 auto;
+
+}
